@@ -1,0 +1,32 @@
+Signal;Description
+SIGHUP;"The HUP signal is sent to a process when its controlling terminal is closed. It was originally designed to notify a serial line drop (HUP stands for ""Hang Up""). In modern systems, this signal usually indicates the controlling pseudo or virtual terminal is closed."
+SIGINT;"The INT signal is sent to a process by its controlling terminal when a user wants to interrupt the process. This signal is often initiated by pressing Ctrl+C, but on some systems, the ""delete"" character or ""break"" key can be used."
+SIGQUIT;The QUIT signal is sent to a process by its controlling terminal when the user requests that the process perform a core dump.
+SIGILL;Illegal instruction. The ILL signal is sent to a process when it attempts to execute a malformed, unknown, or privileged instruction.
+SIGTRAP;Trace trap. The TRAP signal is sent to a process when a condition arises that a debugger is tracing — for example, when a particular function is executed, or when a particular variable changes value.
+SIGABRT,SIGIOT;Abort process. ABRT is usually sent by the process itself, when it calls the abort() system call to signal an abnormal termination, but it can be sent from any process like any other signal. SIGIOT is a synonym for SIGABRT. (IOT stands for input/output trap, a signal which originated on the PDP-11.)
+SIGBUS;The BUS signal is sent to a process when it causes a bus error, such as an incorrect memory access alignment or non-existent physical address. In Linux, this signal maps to SIGUNUSED, because memory access errors of this kind are not possible.
+SIGFPE;Floating point exception. The FPE signal is sent to a process when it executes erroneous arithmetic operations, such as division by zero.
+SIGKILL;Forcefully terminate a process. With STOP, this is one of two signals which cannot be intercepted, ignored, or handled by the process itself.
+SIGUSR1;User-defined signal 1. This is one of two signals designated for custom user signal handling.
+SIGSEGV;The SEGV signal is sent to a process when it makes an invalid virtual memory reference, or segmentation fault, i.e., when it performs a segmentation violation.
+SIGUSR2;User-defined signal 2. This is one of two signals designated for custom user signal handling.
+SIGPIPE;The PIPE signal is sent to a process when it attempts to write to a pipe without a process connected to the other end.
+SIGALRM;The ALRM signal notifies a process that the time interval specified in a call to the alarm() system function has expired.
+SIGTERM;The TERM signal is sent to a process to request its termination. Unlike the KILL signal, it can be caught and interpreted or ignored by the process. This signal allows the process to perform nice termination releasing resources and saving state if appropriate. It should be noted that SIGINT is nearly identical to SIGTERM.
+SIGSTKFLT;Stack fault. Maps to SIGUNUSED in Linux.
+SIGCHLD;The CHLD signal is sent to a process when a child process terminates, is interrupted, or resumes after being interrupted. One common usage of the signal is to instruct the operating system to clean up the resources used by a child process after its termination without an explicit call to the wait system call.
+SIGCONT;Continue executing after stopped, e.g., by STOP
+SIGSTOP;The STOP signal instructs the operating system to stop a process for later resumption. This is one of two signals, along with KILL that cannot be intercepted, ignored, or handled by the process itself.
+SIGTSTP;The TSTP signal is sent to a process by its controlling terminal to request it to stop temporarily. It is commonly initiated by the user pressing Ctrl+Z. Unlike SIGSTOP, this process can register a signal handler for or ignore the signal.
+SIGTTIN;The TTIN signal is sent to a process when it attempts to read from the tty while in the background. This signal can be received only by processes under job control. Daemons do not have controlling terminals and should never receive this signal.
+SIGTTOU;TTOU signal is sent to a process when it attempts to write from the tty while in the background. The compliment to TTIN.
+SIGURG;The URG signal is sent to a process when a socket has urgent or out-of-band data available to read.
+SIGXCPU;The XCPU signal is sent to a process when it has used up the CPU for a duration that exceeds a certain predetermined user-settable value. The arrival of an XCPU signal provides the receiving process a chance to quickly save any intermediate results and to exit gracefully, before it is terminated by the operating system using the SIGKILL signal.
+SIGXFSZ;The XFSZ signal is sent to a process when it grows a file larger than the maximum allowed size.
+SIGVTALRM;Virtual alarm clock. May be sent by the alarm() system call. By default, this signal kills the process, but it's intended for use with process-specific signal handling.
+SIGPROF;"Profiling alarm clock. Indicates expiration of a timer that measures CPU time used by the current process (""user"" time), and CPU time expended on behalf of the process by the system (""system"" time). These times may be used to implement code profiling facilities. By default, this signal terminates the process, but it's intended for use with process-specific signal handling."
+SIGWINCH;Window change. The WINCH signal is sent to a process when its controlling terminal changes size, for instance if you resize it in your window manager.
+SIGIO,SIGPOLL;Input/output is now possible. SIGPOLL is a synonym for SIGIO, and in Linux its behavior is identical to SIGURG.
+SIGPWR,SIGLOST;Power failure. The PWR signal is sent to a process when the system detects a power failure. SIGLOST is a synonym for SIGPWR.
+SIGUNUSED,SIGSYS;Unused signal. This signal is provided for compatibility reasons, for example when porting software from an operating system with different or unsupported signals in Linux. In Linux, SIGSYS is a synonym for SIGUNUSED.
