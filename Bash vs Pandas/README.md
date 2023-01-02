@@ -2,7 +2,7 @@
 It was intended to show Python Pandas Library and default Bash commands regarding simple slicing of a data file, also presenting to users unfamiliar to any of the techniques an alternative.
 
 ### Data file
-The target data csv file for this demonstration is a list of Linux signals scraped from [https://www.computerhope.com/unix/signals.htm] using Python's Beautiful Soup.
+The target data csv file for this demonstration (**signals.csv**) is a list of Linux signals scraped from https://www.computerhope.com/unix/signals.htm using Python's Beautiful Soup.
 
 ### Results
 The main difference would be the execution time of both languages, as shown in the table below.
