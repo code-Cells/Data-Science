@@ -8,7 +8,7 @@ The target data csv file for this demonstration (**signals.csv**) is a list of L
 The main difference would be the execution time of both languages, as shown in the table below.
 
 | Time | Bash (s) | Python (s) | Ratio |
-| ---- | ---- | ------ | ----- |
+| ---- | :----: | :------: | :-----: |
 | Real | 0,0126	| 0,659	| 52,3 |
 | User | 0,0108	| 0,588	| 54,4 |
 | Sys  | 0,007	| 0,062 |	9    |
