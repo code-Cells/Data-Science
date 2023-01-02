@@ -14,4 +14,4 @@ The main difference would be the execution time of both languages, as shown in t
 | Sys  | 0,007	| 0,062 |	9    |
 
 The data presented comes from the means of 5 Bash and Python's code execution, discarding the first one, where there were outlier time measurements due to caching.
-Given these results, Bash code, for the scripts in question, executed basically 50 times faster. But it should be taken in consideration that either mean values must seen almost irrelevant to the user **in this example**. If used for large data files or in a production environment, this may not be the case.   
+Given these results, Bash code, for the scripts in question, executed basically 50 times faster. But it should be taken in consideration that either mean values must seen almost irrelevant to the user **in this example**. If used for large data files or in a production environments, this may not be the case.   
